@@ -1,0 +1,48 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn add json-server
+
+PATH: 
+  /home/r1phunt3r/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/sbin:/usr/sbin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  10.22.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/r1phunt3r/Documents/movie-manager/package.json: Unexpected string in JSON at position 213
+      at JSON.parse (<anonymous>)
+      at /usr/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+      "name": "movie-manager",
+      "scripts":{
+          "build": "yarn --cwd packages/client build",
+          "start": "yarn --cwd packages/client start",
+          "test": "yarn --cwd packages/client test"
+      }
+      "private": true,
+      "workspaces": [
+          "packages/*"
+      ],
+      "dependencies": {
+          "yarn": "^1.22.4"
+      },
+      "version": "1.0.0",
+      "main": "index.js",
+      "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
